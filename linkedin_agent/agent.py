@@ -9,6 +9,8 @@ from claude_agent_sdk import (
     ClaudeAgentOptions,
     ClaudeSDKClient,
     TextBlock,
+    ToolResultBlock,
+    ToolUseBlock,
     create_sdk_mcp_server,
 )
 
@@ -89,6 +91,10 @@ async def run_agent(objective: str, *, runtime: AgentRuntime | None = None) -> N
                     for block in message.content:
                         if isinstance(block, TextBlock):
                             print(block.text)
+                        elif isinstance(block, ToolUseBlock):
+                            print(f"🔧 tool → {block.name} {block.input}")
+                        elif isinstance(block, ToolResultBlock):
+                            print(f"✅ result ← {block.content}")
     finally:
         if owns_runtime:
             runtime.close()

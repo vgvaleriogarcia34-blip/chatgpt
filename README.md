@@ -44,6 +44,15 @@ Bucle autónomo (cada 1h):
 python main.py --loop 3600 "Mantén 1 post diario y cualifica los nuevos leads"
 ```
 
+## Probar sin credenciales de LinkedIn
+
+Hay un ejemplo con cliente simulado para ver el razonamiento y las tool-calls
+del agente usando solo `ANTHROPIC_API_KEY`:
+
+```bash
+ANTHROPIC_API_KEY=sk-ant-... python -m examples.run_mock
+```
+
 ## Arquitectura
 
 ```
