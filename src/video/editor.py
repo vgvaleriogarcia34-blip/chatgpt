@@ -9,6 +9,29 @@ from pathlib import Path
 from src.video.transcriber import Transcript, Word
 
 
+_FONT_FALLBACKS = [
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "/System/Library/Fonts/Helvetica.ttc",
+    "/Library/Fonts/Arial Bold.ttf",
+    "C:/Windows/Fonts/arialbd.ttf",
+]
+
+
+def resolve_font(preferred: Path) -> Path:
+    if preferred and preferred.exists():
+        return preferred
+    for candidate in _FONT_FALLBACKS:
+        p = Path(candidate)
+        if p.exists():
+            return p
+    raise FileNotFoundError(
+        f"No usable font found (configured: {preferred}). "
+        "Place a TTF at assets/fonts/Inter-Bold.ttf or install a common "
+        "system font (DejaVu/Liberation/Helvetica/Arial)."
+    )
+
+
 @dataclass
 class RenderOptions:
     font_path: Path
@@ -91,7 +114,8 @@ def render_clip(
     words = transcript.words_in_range(start_s, end_s)
     build_ass(words, ass_path, opts)
 
-    font_arg = opts.font_path.as_posix()
+    font_path = resolve_font(opts.font_path)
+    font_arg = font_path.as_posix()
     title_escaped = hook_phrase.replace("'", r"\'").replace(":", r"\:")
     watermark = opts.watermark.replace("'", r"\'").replace(":", r"\:")
 

@@ -62,12 +62,12 @@ class Settings:
     brand_color_text: str
 
 
-def load_settings() -> Settings:
+def load_settings(require_sheets: bool = False) -> Settings:
     return Settings(
         anthropic_api_key=_env("ANTHROPIC_API_KEY", required=True),
         claude_model=_env("CLAUDE_MODEL", "claude-sonnet-4-6"),
         google_sa_json=ROOT / _env("GOOGLE_SA_JSON", "secrets/google-sa.json"),
-        spreadsheet_id=_env("SPREADSHEET_ID", required=True),
+        spreadsheet_id=_env("SPREADSHEET_ID", required=require_sheets),
         queue_tab=_env("QUEUE_TAB", "queue"),
         clips_tab=_env("CLIPS_TAB", "clips"),
         ig_user_id=_env("IG_USER_ID"),
@@ -93,4 +93,4 @@ def load_settings() -> Settings:
     )
 
 
-settings = load_settings() if os.getenv("ANTHROPIC_API_KEY") else None
+settings = load_settings(require_sheets=False) if os.getenv("ANTHROPIC_API_KEY") else None
