@@ -1,0 +1,17 @@
+[Unit]
+Description=ReelForge worker
+After=network-online.target
+
+[Service]
+Type=simple
+User=reelforge
+WorkingDirectory=/opt/reelforge
+EnvironmentFile=/opt/reelforge/.env
+ExecStart=/opt/reelforge/.venv/bin/python -m src.worker
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/var/log/reelforge/worker.log
+StandardError=append:/var/log/reelforge/worker.err
+
+[Install]
+WantedBy=multi-user.target

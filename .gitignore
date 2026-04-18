@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.mypy_cache/
+.pytest_cache/
+
+# Secrets
+secrets/
+
+# Data & artifacts
+data/downloads/
+data/clips/
+data/renders/
+data/logs/
+*.mp4
+*.ass
+*.srt
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
