@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini CRM</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini CRM</h1>
+    <p>Gestión básica de clientes, oportunidades y tareas.</p>
+  </header>
+
+  <main class="grid">
+    <section>
+      <h2>Contactos</h2>
+      <form id="contact-form">
+        <input name="nombre" placeholder="Nombre" required />
+        <input name="empresa" placeholder="Empresa" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <button type="submit">Agregar contacto</button>
+      </form>
+      <ul id="contact-list"></ul>
+    </section>
+
+    <section>
+      <h2>Oportunidades</h2>
+      <form id="deal-form">
+        <input name="titulo" placeholder="Título" required />
+        <input name="valor" type="number" min="0" placeholder="Valor" required />
+        <select name="etapa" required>
+          <option value="Nuevo">Nuevo</option>
+          <option value="En progreso">En progreso</option>
+          <option value="Ganado">Ganado</option>
+          <option value="Perdido">Perdido</option>
+        </select>
+        <button type="submit">Agregar oportunidad</button>
+      </form>
+      <ul id="deal-list"></ul>
+    </section>
+
+    <section>
+      <h2>Tareas</h2>
+      <form id="task-form">
+        <input name="descripcion" placeholder="Descripción" required />
+        <input name="fecha" type="date" required />
+        <button type="submit">Agregar tarea</button>
+      </form>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
