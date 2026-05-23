@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>{% block title %}Outlook AI{% endblock %}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { --bg:#0f172a; --panel:#1e293b; --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --accent2:#22c55e; --danger:#ef4444; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  header { background: var(--panel); padding: 12px 24px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #334155; }
+  header a { color: var(--accent); text-decoration:none; margin-right: 16px; }
+  header a:hover { text-decoration: underline; }
+  main { padding: 24px; max-width: 1100px; margin: 0 auto; }
+  h1, h2 { color: var(--text); }
+  .muted { color: var(--muted); font-size: 0.9em; }
+  .card { background: var(--panel); border:1px solid #334155; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .row { display:flex; gap:12px; flex-wrap:wrap; }
+  .row > * { flex: 1; }
+  button, .btn { background: var(--accent); color: #0f172a; border: none; padding: 8px 14px; border-radius:6px; cursor:pointer; font-weight:600; text-decoration:none; display:inline-block; }
+  button:hover, .btn:hover { opacity:0.9; }
+  .btn-green { background: var(--accent2); color: white; }
+  .btn-ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  input[type=text], input[type=email], textarea { width:100%; background:#0f172a; color: var(--text); border:1px solid #334155; border-radius:6px; padding:8px; font-family:inherit; font-size:14px; }
+  textarea { min-height: 140px; resize: vertical; }
+  label { display:block; font-size: 0.85em; color: var(--muted); margin-bottom: 4px; margin-top: 8px; }
+  ul.list { list-style:none; padding:0; }
+  ul.list li { border-bottom:1px solid #334155; padding: 10px 0; }
+  ul.list li a { color: var(--text); text-decoration:none; }
+  ul.list li a:hover .subject { color: var(--accent); }
+  .subject { font-weight: 600; }
+  .unread .subject::before { content: "● "; color: var(--accent); }
+  pre.body { white-space: pre-wrap; word-break: break-word; background:#0f172a; padding:12px; border-radius:6px; border:1px solid #334155; }
+  .flash { background: #064e3b; color: #d1fae5; padding: 10px; border-radius: 6px; margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <a href="/inbox">📥 Bandeja</a>
+    <a href="/compose">✏️ Nuevo correo</a>
+  </div>
+  <div>
+    {% if me %}<span class="muted">{{ me.userPrincipalName }}</span>{% endif %}
+    <a href="/auth/logout">Salir</a>
+  </div>
+</header>
+<main>
+  {% if request.query_params.get('sent') %}<div class="flash">Correo enviado ✔</div>{% endif %}
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Nuevo correo{% endblock %}
+{% block content %}
+<h1>✏️ Nuevo correo</h1>
+
+<div class="card">
+  <h2>1. Pide a la IA que lo redacte</h2>
+  <form method="post" action="/compose/draft">
+    <label>Instrucciones</label>
+    <textarea name="instructions" placeholder="Ej: escribe a Juan agradeciendole la reunion de ayer y proponiendo una llamada de seguimiento la proxima semana.">{{ instructions }}</textarea>
+    <label>Para (puedes rellenarlo ahora o despues)</label>
+    <input type="text" name="to" value="{{ to }}" placeholder="email1@dominio.com, email2@dominio.com">
+    <label>CC (opcional)</label>
+    <input type="text" name="cc" value="{{ cc }}">
+    <div style="margin-top:10px;">
+      <button type="submit">🧠 Generar borrador</button>
+    </div>
+  </form>
+</div>
+
+<div class="card">
+  <h2>2. Revisa y envia</h2>
+  <form method="post" action="/compose/send">
+    <label>Para *</label>
+    <input type="text" name="to" value="{{ to }}" required placeholder="email1@dominio.com, email2@dominio.com">
+    <label>CC</label>
+    <input type="text" name="cc" value="{{ cc }}">
+    <label>Asunto *</label>
+    <input type="text" name="subject" value="{{ subject }}" required>
+    <label>Cuerpo *</label>
+    <textarea name="body" required>{{ body }}</textarea>
+    <div style="margin-top:10px;">
+      <button class="btn-green" type="submit">📤 Enviar</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

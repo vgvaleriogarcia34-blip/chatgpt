@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{{ msg.subject or '(sin asunto)' }}{% endblock %}
+{% block content %}
+<a href="/inbox" class="muted">← Volver</a>
+<h1>{{ msg.subject or '(sin asunto)' }}</h1>
+<p class="muted">
+  De: {{ msg.from.emailAddress.name }} &lt;{{ msg.from.emailAddress.address }}&gt; · {{ msg.receivedDateTime }}
+</p>
+
+<div class="card">
+  <h2>Mensaje</h2>
+  <pre class="body">{{ msg.body.content if msg.body.contentType == 'text' else msg.bodyPreview }}</pre>
+</div>
+
+<div class="row">
+  <form method="post" action="/message/{{ msg.id }}/analyze">
+    <button type="submit">🧠 Analizar con IA</button>
+  </form>
+  <form method="post" action="/message/{{ msg.id }}/draft">
+    <label>Instrucciones opcionales para la IA</label>
+    <input type="text" name="instructions" placeholder="Ej: tono mas formal, ofrece reunion el lunes...">
+    <button type="submit" style="margin-top:8px;">✍️ Generar borrador de respuesta</button>
+  </form>
+</div>
+
+{% if analysis %}
+<div class="card">
+  <h2>Analisis IA</h2>
+  <pre class="body">{{ analysis }}</pre>
+</div>
+{% endif %}
+
+{% if draft is not none %}
+<div class="card">
+  <h2>Borrador de respuesta</h2>
+  <form method="post" action="/message/{{ msg.id }}/send-reply">
+    <textarea name="body">{{ draft }}</textarea>
+    <div style="margin-top:10px;">
+      <button class="btn-green" type="submit">📤 Enviar respuesta</button>
+    </div>
+  </form>
+</div>
+{% endif %}
+{% endblock %}

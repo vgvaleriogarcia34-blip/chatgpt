@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Bandeja de entrada{% endblock %}
+{% block content %}
+<h1>Bandeja de entrada</h1>
+<p class="muted">{{ messages|length }} mensajes recientes</p>
+<div class="card">
+  <ul class="list">
+    {% for m in messages %}
+      <li class="{% if not m.isRead %}unread{% endif %}">
+        <a href="/message/{{ m.id }}">
+          <div class="subject">{{ m.subject or '(sin asunto)' }}</div>
+          <div class="muted">
+            {{ m.from.emailAddress.name or '' }} &lt;{{ m.from.emailAddress.address or '' }}&gt;
+            · {{ m.receivedDateTime }}
+          </div>
+          <div class="muted">{{ m.bodyPreview[:140] }}</div>
+        </a>
+      </li>
+    {% else %}
+      <li class="muted">No hay mensajes.</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
