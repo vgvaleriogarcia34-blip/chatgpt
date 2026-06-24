@@ -5,7 +5,7 @@
 
 ## Identidad
 
-- **Nombre:** **Pedro García** ✅ confirmado
+- **Nombre:** **Valerio García** ✅ confirmado (coincide con el contrato de Snoopy)
 - **Email personal:** vgvaleriogarcia34@gmail.com
 - **Email operativo del negocio:** **familiasempresarias2080@gmail.com** ✅ (cuenta donde se
   genera todo el trabajo — el becario trabaja siempre sobre esta)
