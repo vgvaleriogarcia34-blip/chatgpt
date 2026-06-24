@@ -5,11 +5,12 @@
 
 ## Identidad
 
-- **Nombre:** Valerio García *[verificar]*
+- **Nombre:** **Pedro García** ✅ confirmado
 - **Email personal:** vgvaleriogarcia34@gmail.com
-- **Email operativo del negocio:** familiasempresarias2080@gmail.com
+- **Email operativo del negocio:** **familiasempresarias2080@gmail.com** ✅ (cuenta donde se
+  genera todo el trabajo — el becario trabaja siempre sobre esta)
 - **WhatsApp (para recibir propuestas):** *(pendiente)*
-- **Marca / negocio:** **Familias Empresarias** · **Arquitectos de Claridad™** *[verificar]*
+- **Marca / negocio:** **Familias Empresarias** · **Arquitectos de Claridad** ✅ confirmado
 - **Apoyo:** Cecilia Torralba gestiona la agenda (crea tus eventos en Calendar) *[verificar]*
 
 ## A qué me dedico — Consultoría a empresas familiares con IA + datos
