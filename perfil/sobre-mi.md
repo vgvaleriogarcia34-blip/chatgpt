@@ -1,43 +1,45 @@
 # 👤 Sobre mí (el jefe)
 
-> Este es el archivo más importante del sistema. Cuanto mejor te conozca el becario, mejores
-> serán sus propuestas. Rellena lo que puedas; el becario completará el resto investigando tus
-> cuentas y preguntándote. Mantén esto vivo.
+> El becario rellena esto cruzando lo que sabe con Gmail, Drive, Calendar y HubSpot.
+> ⚠️ Lo marcado como *[verificar]* lo dedujo de tus datos; confírmalo o corrígelo.
 
 ## Identidad
 
-- **Nombre:**
-- **Email:** vgvaleriogarcia34@gmail.com
-- **WhatsApp (para recibir propuestas):**
-- **Rol / cargo:**
-- **Empresa / marca:**
+- **Nombre:** Valerio García *[verificar]*
+- **Email personal:** vgvaleriogarcia34@gmail.com
+- **Email operativo del negocio:** familiasempresarias2080@gmail.com
+- **WhatsApp (para recibir propuestas):** *(pendiente)*
+- **Marca / negocio:** **Familias Empresarias** · **Arquitectos de Claridad™** *[verificar]*
+- **Apoyo:** Cecilia Torralba gestiona la agenda (crea tus eventos en Calendar) *[verificar]*
 
-## A qué me dedico — Consultoría / servicios B2B
+## A qué me dedico — Consultoría a empresas familiares con IA + datos
 
-- **Tipo de consultoría / especialidad:**
-- **Servicios que ofrezco:** *(ej. diagnóstico, implantación, formación, acompañamiento…)*
-- **Mi propuesta de valor (en una frase):**
-- **Cliente ideal (perfil ICP):** *(sector, tamaño, cargo del decisor, dolor que resuelvo)*
-- **Mercado / zona geográfica:**
-- **Modelo de cobro:** *(por proyecto / iguala mensual / por horas / éxito)*
-- **Ticket medio y duración típica del proyecto:**
-- **Tamaño del negocio (solo / equipo / nº personas):**
+- **Especialidad:** ayudo a empresas familiares a convertir sus datos en decisiones rentables:
+  diagnóstico financiero, auditoría de cartera y análisis ABC, racionalización de proveedores,
+  pricing y salto a ecommerce. *[verificar/afinar]*
+- **Método propio:** "Círculo de Claridad" — una **escalada de agentes IA** (Agente 01
+  Clasificador → 02 Diagnóstico de rentabilidad → 03 Propuesta de acción → 04 Activos
+  reutilizables → 05 Cierre operativo). Conviertes entradas en decisiones rentables.
+- **Propuesta de valor:** *"De un catálogo/finanzas gobernados por inercia a una operación
+  rentable, trazable y accionable."* *[verificar]*
+- **Cliente ideal (ICP):** empresa familiar consolidada (PyME), con catálogo o finanzas
+  complejas y poca explotación de sus propios datos. *[verificar]*
+- **Modelo de cobro:** *[pendiente]*
+- **Ticket / duración:** *[pendiente]*
 
 ## Cómo trabajo
 
-- **Mis prioridades ahora mismo:**
-- **Qué me quita más tiempo (y querría automatizar):**
-- **Herramientas que uso a diario:** *(HubSpot, Gmail, Calendar, Drive, Make, Canva…)*
-- **Cómo capto clientes hoy:** *(referidos, LinkedIn, eventos, web…)*
-- **Mi estilo de comunicación (formal / cercano / directo):**
-- **Horario y ritmo de trabajo:**
+- **Herramientas:** IA (agentes), Google Drive (expedientes por cliente), Plaud (graba y
+  transcribe reuniones), HubSpot, Gmail, Make, Canva.
+- **Estructura de expedientes:** carpetas por cliente (ej. `01_CLIENTES ACTIVOS/...`), con
+  Contexto / Diagnóstico / Entregables.
+- **Captación:** LinkedIn (apareces en búsquedas con frecuencia), referidos. *[verificar]*
 
 ## Qué espero del becario
 
-- **Lo que más valoro que haga por mí:**
-- **Líneas rojas (lo que NUNCA debe hacer sin preguntar):**
-- **Frecuencia de propuestas:** *(ej. resumen diario por WhatsApp a las 8:00)*
 - **Canal preferido para propuestas:** WhatsApp *(ver `automatizacion/canal-whatsapp.md`)*
+- **Líneas rojas:** nada de cara al exterior (emails, CRM, envíos) sin mi OK.
+- **Frecuencia:** *[pendiente: ej. resumen diario por WhatsApp a las 8:00]*
 
 ---
-*Última actualización: [el becario rellena la fecha al editar]*
+*Última actualización: 2026-06-24 (por el Becario, desde tus datos reales)*
