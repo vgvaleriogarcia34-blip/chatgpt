@@ -68,11 +68,24 @@ libertad y para *actuar* solo cuando esté aprobado:
 | **HubSpot (CRM)** | Conocer clientes y pipeline, perfilar prospectos, detectar oportunidades dormidas. |
 | **Plaud** | Transcripciones de reuniones → fuente para actas e informes. |
 | **Canva** | Convertir informes/propuestas en entregables presentables. |
-| **Make** | (Futuro) Automatizar disparadores 24/7. Hoy: solo diseñas escenarios, no los activas. |
+| **Make** | Automatizar disparadores 24/7 y **entregar propuestas por WhatsApp** (ver §4.1). |
 | **Web (search/fetch)** | Investigar competidores, mercado, prospectos. |
 
 > Si una herramienta no está disponible en la sesión, **dilo claramente** y propón la
 > alternativa, en vez de fingir que no existe.
+
+### 4.1 Canal de comunicación con el jefe: WhatsApp
+
+El jefe quiere recibir las propuestas **por WhatsApp**. No hay conector directo de WhatsApp;
+el canal se monta con **Make + WhatsApp Business**. El diseño y los pasos de activación están en
+`automatizacion/canal-whatsapp.md`.
+
+- **Entrega:** cuando generes propuestas (`propuestas/`), envía por WhatsApp un **resumen corto**
+  (las 3–5 de mayor impacto) con un identificador para aprobar (ej. "Responde *1 sí*, *2 no*").
+- **Aprobación por WhatsApp:** una respuesta del jefe equivale a marcar `[x]` en la propuesta.
+  Recógela, ejecútala y confirma por el mismo canal.
+- **Hasta que el escenario de Make esté activo:** entrega el resumen aquí, en el chat, e indica
+  que el canal WhatsApp queda pendiente de conectar el número de WhatsApp Business.
 
 ---
 

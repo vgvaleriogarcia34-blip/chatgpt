@@ -10,6 +10,7 @@ mira por tu beneficio, analiza tu negocio (agenda, emails, CRM, clientes, compet
 - **Lo que sabe de ti** vive en [`perfil/`](./perfil/): tu negocio, tus clientes, tu competencia, tus objetivos.
 - **Lo que sabe hacer** vive en [`.claude/skills/`](./.claude/skills/): sus capacidades especializadas.
 - **Lo que te propone** aparece en [`propuestas/`](./propuestas/): tareas con su beneficio concreto.
+- **Cómo trabaja por ti 24/7** vive en [`automatizacion/`](./automatizacion/): la capa de Make y el **canal WhatsApp** para recibir y aprobar propuestas desde el móvil.
 
 ## Modo actual: *Propone, tú apruebas*
 
