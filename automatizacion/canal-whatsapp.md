@@ -45,6 +45,32 @@ Business Cloud API**. Aquí está el diseño y los pasos de activación.
 - **Router:** interpreta `N sí` / `N no`.
 - **Acción:** marca la propuesta N como aprobada/rechazada y notifica al becario para ejecutar.
 
+## ⚠️ Decisión (2026-06-25): WhatsApp PERSONAL (no Business)
+Valerio quiere usar su **WhatsApp normal**, que **no tiene API oficial** (Meta solo da API a
+WhatsApp Business). Vía elegida: **conector de terceros** que hace de puente con WhatsApp Web.
+
+- **Conector recomendado:** **Whapi.cloud** (`whapi-cloud` en Make) — envía y recibe, conecta el
+  número personal por QR (como WhatsApp Web). De pago mensual por canal. Riesgo asumido: Meta
+  podría bloquear el número (es una vía no oficial).
+- **Alternativa más simple:** `inout-personal-whatsapp` (módulos nativos de enviar + recibir en Make).
+- **Flujo:** enviar = *Send Text Message*; recibir tu "1 sí/2 no" = webhook de Whapi → Make.
+
+### Pasos pendientes (los hace Valerio, una vez)
+1. Crear cuenta en **whapi.cloud**.
+2. Conectar su WhatsApp escaneando el **QR**.
+3. Copiar el **API token**.
+4. Pegarlo en la solicitud de conexión de Make (Charly la crea; el token no se comparte en chat).
+
+### Luego (lo hace Charly)
+- Crear la conexión `whapi-cloud` en el equipo 549343.
+- Construir los 2 escenarios (envío + recepción) y dejarlos en pausa para revisión.
+
+> La solicitud de conexión "WhatsApp Business" anterior (requestId
+> `666e84a4-4421-4bc5-ab8e-db86aef630f1`) quedó **descartada**; Valerio puede borrarla desde Make
+> (la API devolvió "Access denied" al intentar borrarla Charly).
+
+---
+
 ## Activación — estado real (2026-06-25)
 - **Make:** organización `My Organization` (id 1657100), equipo `My Team` (id 549343), plan **Free**.
 - **App oficial:** `whatsapp-business-cloud` — el conector **oficial de Meta** ("WhatsApp
