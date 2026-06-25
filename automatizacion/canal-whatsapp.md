@@ -1,4 +1,19 @@
-# 📱 Canal WhatsApp — Recibir y aprobar propuestas
+# 📱 Canal de propuestas — Telegram (elegido) · WhatsApp (alternativas)
+
+> **Decisión final (2026-06-25): el canal es TELEGRAM.** Gratis, oficial, sin riesgo de bloqueo.
+> Charly te habla por un bot privado; respondes "1 sí / 2 no" y ejecuta lo aprobado.
+
+## Telegram — estado real
+- **Conector:** `telegram` (Telegram Bot) en Make, equipo 549343.
+- **Bot creado por Valerio** vía @BotFather (token en su poder).
+- **Solicitud de conexión creada por Charly** (todos los módulos): **pendiente de pegar el token**.
+  - 🔗 https://eu2.make.com/549343/credentials-requests/inbox?requestId=bd5f59f3-eee7-4e3f-87ae-1afa2f50a76b
+- **Falta:** Valerio pega el token en ese enlace y pulsa **Start** en el bot.
+- **Luego (Charly):** construir 2 escenarios → (A) envío de propuestas, (B) lectura de la respuesta
+  (router que interpreta "N sí/no"), en pausa para revisión.
+
+---
+
 
 Quieres recibir las propuestas del becario **por WhatsApp** y poder aprobarlas desde ahí.
 No existe un conector directo de WhatsApp, así que el canal se monta con **Make + WhatsApp
