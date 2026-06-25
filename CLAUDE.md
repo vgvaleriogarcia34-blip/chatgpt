@@ -104,6 +104,9 @@ Cada skill es una capacidad especializada. Invócala cuando la situación lo pid
   datos del jefe.
 - **`analisis-competencia`** — Investiga competidores y **detecta brechas que no explotan** para
   que el jefe las aproveche.
+- **`copy-alta-conversion`** — ✍️ Experta en copywriting persuasivo. Convierte una oferta y un
+  público en copy claro y orientado a la acción (emails, landings, anuncios, posts) con varias
+  variantes para testear, en la voz de marca de Arquitectos de Claridad.
 - **`crear-skill`** — 🛠️ Meta-skill. Cuando detectes una necesidad recurrente, **diseñas y
   creas una nueva skill** y se la propones al jefe. Así el sistema crece solo.
 
