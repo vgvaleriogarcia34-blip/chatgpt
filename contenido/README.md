@@ -23,5 +23,12 @@ parte de la propuesta de valor de la consultora.
 ✅ **Subido a Drive** el 2026-06-25 a la carpeta *"CONTENIDO PUBLICACIONES (RRSS, Web, Blog)"*
 (id `1bg-Sz-aJabOX3BhkAJkIoS2GkJdV3rXw`), como 8 Google Docs editables (LÉEME + 7 historias).
 
+### v2 · Copy de alta conversión (2026-06-25)
+✅ Subcarpeta *"✨ Copy alta conversión (v2)"* (id `1WMQk0VWtSIZPar-wQBwto4gBbBdRmmK2`) con los 7
+casos **reescritos con la skill `copy-alta-conversion`**: cada uno con titular + 3 variantes,
+post LinkedIn (PAS/BAB), 2 captions (dolor/aspiración), texto web, CTA y nota de por qué funciona.
+> ⚠️ Las herramientas de Drive no permiten editar ni borrar en sitio: los 7 docs v1 originales
+> siguen en la carpeta padre. Bórralos tú si quieres dejar solo la v2.
+
 ---
 *Generado por el Becario el 2026-06-24 a partir de los expedientes reales de Drive.*
