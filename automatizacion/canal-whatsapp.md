@@ -47,13 +47,17 @@ Business Cloud API**. Aquí está el diseño y los pasos de activación.
 
 ## Activación — estado real (2026-06-25)
 - **Make:** organización `My Organization` (id 1657100), equipo `My Team` (id 549343), plan **Free**.
-- **App oficial:** `whatsapp-business-cloud` (conector de Meta). Conexión tipo
-  `account:whatsapp-business-cloud`.
+- **App oficial:** `whatsapp-business-cloud` — el conector **oficial de Meta** ("WhatsApp
+  Business Cloud"). Conexión tipo `account:whatsapp-business-cloud`.
+- **Requisitos de Meta (una vez):** cuenta de Facebook, **Meta Business Suite** con un *business
+  portfolio*, y un **número de WhatsApp Business** válido. Importante: **desactivar la
+  verificación en dos pasos** del número si la tienes activa.
 - **Solicitud de conexión creada por Charly** (módulos: enviar mensaje, plantilla, recibir eventos):
   - Estado: **pendiente de que Valerio la autorice**.
   - 🔗 Enlace: https://eu2.make.com/549343/credentials-requests/inbox?requestId=666e84a4-4421-4bc5-ab8e-db86aef630f1
-- **Lo que tú haces (una vez):** abrir el enlace e introducir tus datos de WhatsApp Business Cloud
-  de Meta (Phone Number ID + token de acceso). Charly no puede meter el token por seguridad.
+- **Lo que tú haces (una vez):** abrir el enlace → iniciar sesión en **Meta**, elegir tu *business
+  portfolio* y tu *cuenta de WhatsApp Business* (o crearla en el momento) y confirmar. No se pega
+  ningún token: es el login de Meta. Charly no puede hacerlo por ti (es tu identidad de Meta).
 - **Cuando esté autorizada, dime "activa el canal WhatsApp"** y Charly construye los 2 escenarios
   (envío de propuestas + recogida de tu respuesta) y los deja en pausa para que los revises.
 - ⚠️ **Nota plan Free:** límite de 2 escenarios activos y 1.000 operaciones/mes. Si hace falta,
