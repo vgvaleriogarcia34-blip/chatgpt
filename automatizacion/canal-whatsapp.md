@@ -45,10 +45,19 @@ Business Cloud API**. Aquí está el diseño y los pasos de activación.
 - **Router:** interpreta `N sí` / `N no`.
 - **Acción:** marca la propuesta N como aprobada/rechazada y notifica al becario para ejecutar.
 
-## Activación
-Cuando tengas la conexión lista, dime: **"activa el canal WhatsApp"**. Construiré ambos
-escenarios en tu cuenta de Make con las herramientas disponibles y te los dejaré en pausa para
-que los revises antes de encenderlos.
+## Activación — estado real (2026-06-25)
+- **Make:** organización `My Organization` (id 1657100), equipo `My Team` (id 549343), plan **Free**.
+- **App oficial:** `whatsapp-business-cloud` (conector de Meta). Conexión tipo
+  `account:whatsapp-business-cloud`.
+- **Solicitud de conexión creada por Charly** (módulos: enviar mensaje, plantilla, recibir eventos):
+  - Estado: **pendiente de que Valerio la autorice**.
+  - 🔗 Enlace: https://eu2.make.com/549343/credentials-requests/inbox?requestId=666e84a4-4421-4bc5-ab8e-db86aef630f1
+- **Lo que tú haces (una vez):** abrir el enlace e introducir tus datos de WhatsApp Business Cloud
+  de Meta (Phone Number ID + token de acceso). Charly no puede meter el token por seguridad.
+- **Cuando esté autorizada, dime "activa el canal WhatsApp"** y Charly construye los 2 escenarios
+  (envío de propuestas + recogida de tu respuesta) y los deja en pausa para que los revises.
+- ⚠️ **Nota plan Free:** límite de 2 escenarios activos y 1.000 operaciones/mes. Si hace falta,
+  valoramos consolidar escenarios o subir de plan.
 
 ## Mientras tanto
 El becario entrega las propuestas aquí, en el chat, con el mismo formato numerado para que el
