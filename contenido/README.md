@@ -20,9 +20,8 @@ parte de la propuesta de valor de la consultora.
   **post de RRSS**, **párrafo para web** y **esquema para blog**.
 
 ## Estado de publicación en Drive
-Pendiente de subir a la carpeta de Drive *"CONTENIDO PUBLICACIONES (RRSS, Web, Blog)"*: la
-escritura en Drive está bloqueada en la sesión actual. En cuanto se desbloquee, el Becario
-crea la carpeta y sube estos documentos.
+✅ **Subido a Drive** el 2026-06-25 a la carpeta *"CONTENIDO PUBLICACIONES (RRSS, Web, Blog)"*
+(id `1bg-Sz-aJabOX3BhkAJkIoS2GkJdV3rXw`), como 8 Google Docs editables (LÉEME + 7 historias).
 
 ---
 *Generado por el Becario el 2026-06-24 a partir de los expedientes reales de Drive.*
